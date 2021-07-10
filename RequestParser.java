@@ -76,7 +76,7 @@ public class RequestParser {
                 if (slot != -1) {
                     System.out.println("Car with vehicle registration number \"" + regNum + "\" has been parked at slot number " + slot);
                 } else {
-                    System.out.println();
+                    System.out.println("Error: All slots filled, can;t park new vehicle");
                 }
             } catch (NumberFormatException ex) {
                 throw new NumberFormatException("Requires integer but passed string " + requestParams[1]);
